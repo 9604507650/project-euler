@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int prev=0;
+    int current=1;
+    int sum=0;
+    while(current<=4000000)
+    {
+        sum+=(current%2==0)?current:0;
+        int temp=prev;
+        prev=current;
+        current=prev+temp;
+        
+    }
+    cout<<sum;
+    return 0;
+}
