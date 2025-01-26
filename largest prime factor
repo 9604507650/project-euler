@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+   long num=600851475143;
+   long largest_prime_fact=0;
+   long current_fact=2;
+   while(num>1){
+   if(num % current_fact==0)
+   {
+       largest_prime_fact=current_fact;
+       num/=current_fact;
+   }
+   else
+   {
+       current_fact++;
+       
+   }
+}
+cout<<largest_prime_fact;
+    return 0;
+}
